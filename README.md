@@ -1,6 +1,4 @@
-# Modern Approaches to Entity Resolution for Financial Data Integration
-
-This repository contains the code and methodology developed for the Master's Thesis: **"Modern Approaches to Entity Resolution: Leveraging NLP and Graph-Based Models for Financial Data Integration at the European Central Bank"**. 
+# Modern Approaches to Entity Resolution: Leveraging NLP and Graph-Based Models for Financial Data Integration at the European Central Bank
 
 This project aims to detect duplicate corporate records within RIAD (Register of Institutions and Affiliates Database) at the European Central Bank.
 
