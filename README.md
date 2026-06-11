@@ -6,7 +6,7 @@ The complete Entity Resolution pipeline is based on both [Ditto](https://github.
 - [Deep Entity Matching with Pre-Trained Language Models](https://arxiv.org/abs/2004.00584)
 - [GraLMatch: Matching Groups of Entities with Graphs and Language Models](https://arxiv.org/abs/2406.15015)
 
-Also refer to the original README.md.divided into three main phases:
+The pipeline is divided into three main phases:
 
 1.   **Blocking (Candidate Generation):** To overcome the $\mathcal{O}(n^{2})$ computational bottleneck of evaluating all possible pairs, several filtering strategies were developed and benchmarked. These include lexical vectorization (TF-IDF), a hybrid approach combining DistilBERT tokenization with Jaro-Winkler distance, and semantic blocking using Bi-Encoders alongside FAISS for approximate nearest neighbor search.
 2.    **Matching (Classification):** Candidate pairs are evaluated using a Cross-Encoder architecture based on the DITTO framework. By fine-tuning a `distilbert-base-cased` model, the system analyzes the concatenated sequences of entity attributes to predict the probability of a match.
